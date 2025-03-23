@@ -1,0 +1,20 @@
+{
+  "name": "att-modem-puppeteer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "passthrough:on": "ATT_HEADLESS=false node index.js",
+    "passthrough:on:headless": "ATT_HEADLESS=true node index.js",
+    "wifi:off": "ATT_HEADLESS=false node disable-wifi.js",
+    "wifi:off:headless": "ATT_HEADLESS=true node disable-wifi.js"
+  },
+  "keywords": [],
+  "author": "Pete McKinney",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "puppeteer": "^24.4.0"
+  }
+}
